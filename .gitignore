@@ -1,0 +1,39 @@
+# Local files
+.lh
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Testing & caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+logs/
+
+# Project folders
+data/
+docs/
+mlruns/
+tests/
+sql/
+
+# Docker (optional)
+docker-compose.yml
+Dockerfile
