@@ -135,6 +135,12 @@ def show():
 
                     st.markdown("---")
                     st.write(resp["report"])
-                    st.success(f"PDF saved to: {resp['pdf_path']}")
+                    with open("reports/executive_report.pdf", "rb") as f:
+                        st.download_button(
+                            label="📥 Download Executive Report (PDF)",
+                            data=f,
+                            file_name=f"executive_report_{resp['product_name'][:20]}.pdf",
+                            mime="application/pdf"
+                        )
                 except Exception as e:
                     st.error(f"Error: {e}")
