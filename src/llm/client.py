@@ -3,7 +3,7 @@ from src.utils.config import GEMINI_API_KEY
 
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
 
-def call_llm(prompt, temperature=0.3, max_tokens=1500):
+def call_llm(prompt, temperature=0.3, max_tokens=1500, retries=3):
     """
     Single entry point for all LLM calls in this project.
     Calls Gemini REST API directly using requests.

@@ -2,6 +2,11 @@
 .lh
 .env
 
+# generated reports — don't commit PDFs
+reports/*.pdf
+
+# keep the folder itself
+!reports/.gitkeep
 # Python
 __pycache__/
 *.py[cod]
