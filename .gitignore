@@ -34,11 +34,7 @@ logs/
 
 # Project folders
 data/
-docs/
 mlruns/
-tests/
-sql/
 
-# Docker (optional)
-docker-compose.yml
-Dockerfile
+
+

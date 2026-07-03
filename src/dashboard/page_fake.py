@@ -23,7 +23,7 @@ def show():
 
     # SHAP feature importance
     st.subheader("🔬 SHAP Feature Importance")
-    shap_path = "models/shap_fake_review.png"
+    shap_path = "photos/shap_fake_review.png"
     if os.path.exists(shap_path):
         img = Image.open(shap_path)
         st.image(img, caption="Feature importance — XGBoost Fake Review Detector")

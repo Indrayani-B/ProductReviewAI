@@ -27,8 +27,8 @@ selection = st.sidebar.radio("Navigate", list(pages.keys()))
 page = pages[selection]
 
 st.sidebar.markdown("---")
-st.sidebar.caption("Built for Amazon RBS Interview")
-st.sidebar.caption("Model: Logistic Regression + Gemini 2.5")
+st.sidebar.caption("Powered by Gemini 2.5 Flash + scikit-learn")
+st.sidebar.caption("v1.0 — Electronics Reviews Dataset")
 
 # load selected page
 if page == "home":
